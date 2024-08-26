@@ -8,6 +8,7 @@ Este proyecto nos ayudara a crear una API que permita modificar una base de Dato
 ### Clona el repositorio / Clone the Repo
 
 
+### Ingresa a la carpeta `src` / Go to the `src` folder 
 ```bash
 cd src
 ```
@@ -22,11 +23,14 @@ python app.py
 
 ## Rutas de la API / API routes
 Vamos a describir las funciones de los Endpoints  y como usar cada uno de ellos.
-/
+
+
 We will describe the functions of the endpoints and how to use each of them
 
 ### Crear un Item / Create a new Item
-Para crear un nuevo item necesitamos pasarle 2 parametros en Content-Type: aplication/json - To create a new item, you need to pass 2 parameters in content type Application/json :
+Para crear un nuevo item necesitamos pasarle 2 parametros en Content-Type: aplication/json 
+
+To create a new item, you need to pass 2 parameters in content type Application/json :
 
 - name
 - description
@@ -51,7 +55,9 @@ Respuesta del servidor - The server responds:
 ```
 
 ### Obtener todos los items / Get all Items
-Para obtener todos los items unicamente necesitaremos el endpoint, You only need the endpoint to get all items:
+Para obtener todos los items unicamente necesitaremos el endpoint 
+
+You only need the endpoint to get all items:
 
 Endpoint: http://127.0.0.1:5000/items/
 
@@ -87,7 +93,9 @@ Respuesta del servidor - The server responds:
 ```
 
 ### Obtener item por ID / Get an Item by ID
-Necesitamos el Endpoint y el ID del item que queremos obtener, You need the endpoint and the item ID to you want to get:
+Necesitamos el Endpoint y el ID del item que queremos obtener
+
+You need the endpoint and the item ID to you want to get:
 
 Endpoint: http://127.0.0.1:5000/items/4 <- Reemplazalo por el ID - Replace it with the ID
 
@@ -107,7 +115,8 @@ Respuesta del servidor - The server responds:
 
 ### Actualizar un Item / Update a existing Item
 Para actualizar un item necesitamos pasarle el parametro o parametros  que queremos actualizar en el Content-Type: aplication/json 
-/ 
+
+
 To update a existing item, you need to pass the parameter or parameters in the content type Application/json :
 
 - name
@@ -143,7 +152,9 @@ Respuesta del servidor - The server responds:
 
 
 ### Eliminar un item por ID / Delete an Item by ID
-Necesitamos el Endpoint y el ID del item que queremos eliminar, You need the endpoint and the item ID to you want to delete:
+Necesitamos el Endpoint y el ID del item que queremos eliminar
+
+You need the endpoint and the item ID to you want to delete:
 
 Endpoint: http://127.0.0.1:5000/items/6 <- Reemplazalo por el ID - Replace it with the ID
 
